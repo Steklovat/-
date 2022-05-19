@@ -130,7 +130,7 @@ p {
 
 
 
-.top__card {
+.container .top__card {
     display: flex;
     justify-content: space-between;
     
@@ -147,7 +147,7 @@ p {
 }
 
 .image_1 {
-    position: relative;
+    display: flex;
 }
 
 .text__mode_2 {
@@ -289,26 +289,28 @@ color: #F16D7F;
     padding-bottom: 28px;
 }
 
+
+.subscribe{
+    width: 100%;
+    height: 364px;
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 243, 0.7)),
+    url("/image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom ;
+}
+
+
 footer {
     width: 100%;
     background: #222;
 }
 
-.butom {
+.footer {
     height: 79px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.back__footer{
-    width: 100%;
-    height: 364px;
-    background-image: url(/image/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.back__image {
-    width: 100%;
-}
-
 .social {
     
     background-color: #fff;
@@ -326,4 +328,83 @@ footer {
     display: block;
     width: 32px;
     height: 32px;
+}
+
+.text__comment{
+    text-align: center;
+    font-style: italic;
+    color: #222;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.subscribe .container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 97px 0 0 0;
+    justify-content: space-between;
+}
+
+.subscribe__block {
+    margin: 0 auto;
+}
+.comments {
+    width: 360px;
+    margin: 0  auto;
+}
+
+.comments__image {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+
+.subscribe__text {
+    
+    display: flex;
+    flex-direction: column;
+font-weight: 700;
+font-size: 24px;
+line-height: 167.2%;
+/* or 40px */
+
+text-align: center;
+
+color: #222224;
+
+}
+
+.subscribe__text_min {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe__button {
+    height: 36px;
+    background: #E1E1E1;
+    border: 0;
+    border-radius: 30px 0 0 30px;
+    padding: 7px 0 7px 27px;
+    flex: 70%;
+}
+
+.sub__button{
+    display: flex;
+   
+
+}
+.submit{
+    border-radius: 0 30px 30px 0;
+    border: 0;
+    flex: 30%;
+    background: #F16D7F;
+}
+
+.button__text p {
+    color: #fff
 }
