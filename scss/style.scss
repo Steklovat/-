@@ -1,4 +1,4 @@
-@import url(/normalize.css);
+@import "./normalize";
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
 
 *{
@@ -19,9 +19,10 @@ h1, h2 {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
-.top {
+header {
     width: 100%;
     background-color: #222;
 }
@@ -327,6 +328,7 @@ text-transform: uppercase;
 }
 .botton {
     display: block;
+    width: 220px;
     margin: 48px auto 95px auto;
     appearance: auto;
     background-color: #fff;
@@ -418,7 +420,6 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: ;
     margin-right: 8px;
 }
 
@@ -511,4 +512,128 @@ color: #222224;
 
 .button__text p {
     color: #fff
+}
+
+//======CATALOG======
+
+.arrivals{
+    height: 148px;
+    background: #F8F3F4;
+    
+    .arrivals-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 148px;
+        h2 {
+            color: #F16D7F;
+        }
+    }
+}
+.top-link {
+    display: flex;
+}
+.top-link__text {
+    padding-left: 5px;
+}
+.top-link__text p::after {
+    content: "/";
+}
+
+.top-link__text:last-child {
+    
+    p{
+        display: block;
+        color: #F16D7F;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+summary {
+    display: block;
+  }
+  
+    summary::-webkit-details-marker {
+    display: none;
+  }
+
+.sum-fil::after {
+    content: url(/image/filmenu.svg);
+}
+
+.detail[open]::after {
+    content: url(/image/filmenu.svg);
+    color: red;
+}
+
+.fil-item{
+    display: flex;
+    margin: auto;
+}
+.fil-link {
+    padding-left: 28px;
+    display: flex;
+    cursor: pointer;
+}
+.fil-link:after {
+    content: url(/image/strelka.svg);
+    padding-left: 5px;
+    
+    /* transform: translateY(10px); */
+    
+}
+.fill-detals[open] > .fil-link::after {
+    content: url(/image/strelka.svg) ;
+    transform: rotate(0.5turn);
+}
+.fill-detals[open] > .checkbox__trending {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    padding: 18px 25px;
+    left: 485px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px #000000;
+    top: 33px;
+}
+.fill-detals[open] > .checkbox__size {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    padding: 18px 25px;
+    left: 624px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px #000000;
+    top: 33px;
+}
+.fill-detals[open] > .checkbox__price {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    padding: 18px 25px;
+    left: 696px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px #000000;
+    top: 33px;
+}
+
+.fil-link {
+    position: relative;
+}
+
+
+
+[type="checkbox"] {
+    margin-right: 9px;
 }
