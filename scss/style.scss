@@ -690,3 +690,29 @@ color: #6F6E6E;
 [type="checkbox"] {
     margin-right: 9px;
 }
+
+.slide {
+    width: 280px;
+    height: 44px;
+    border: 1px solid #EBEBEB;
+    margin: 0 auto;
+}
+.slide-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.slide-pages::before{
+    content: url(/image/strelka_left.svg);
+    transform: scale(-1, 1);
+    margin: auto;
+}
+.slide-pages::after{
+    content: url(/image/strelka_left.svg);
+    margin: auto;
+}
+.slide-pages__link {
+    padding-left: 13px;
+    color: #000000;
+}
