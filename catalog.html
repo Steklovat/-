@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
         rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <div class="header container">
@@ -19,7 +21,7 @@
                 <a class="icons" href="#"><img src="/image/search.svg" alt="searc"></a>
             </div>
             <ul class="menu__right">
-                <li id="test" class="menu-li"><a  class="icons" href="#"><img src="/image/menu.svg" alt="menu"></a>
+                <li id="test" class="menu-li"><a class="icons" href="#"><img src="/image/menu.svg" alt="menu"></a>
                     <div id="menu" class="mega-box">
                         <div class="mega-item">
                             <h3 class="mega-heading">MEN</h3>
@@ -52,15 +54,23 @@
                 <li class="menu-li"><a class="icons" href="#"><img src="/image/buy.svg" alt=""></a></li>
             </ul>
         </div>
-    </header>    
+    </header>
     <div class="arrivals">
         <div class="container">
             <ul class="arrivals-flex">
-                <li><h2>NEW ARRIVALS</h2></li>
+                <li>
+                    <h2>NEW ARRIVALS</h2>
+                </li>
                 <li class="top-link">
-                    <a class="top-link__text" href="#"><p>HOME</p></a>
-                    <a class="top-link__text" href="#"><p>MEN</p></a>
-                    <a class="top-link__text" href="#"><p>NEW ARRIVALS</p></a>
+                    <a class="top-link__text" href="#">
+                        <p>HOME</p>
+                    </a>
+                    <a class="top-link__text" href="#">
+                        <p>MEN</p>
+                    </a>
+                    <a class="top-link__text" href="#">
+                        <p>NEW ARRIVALS</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -68,50 +78,96 @@
     <section class="product">
         <div class="container">
             <nav class="filter">
-                    <details>
+                <div class="filter">
+                    <details class="filter-det">
                         <summary class="sum-fil">
-                            Filter
+                            FILTER
                         </summary>
+                        <div class="checkbox checkbox__filter">
+                            <details>
+                                <summary class="checkbox-heading"> CATEGORIES</summary>
+                                <a href="" class="checkbox-link">Accessories</a>
+                                <a href="" class="checkbox-link">Bags</a>
+                                <a href="" class="checkbox-link">Denim</a>
+                                <a href="" class="checkbox-link">Hoodies & Sweatshirts</a>
+                                <a href="" class="checkbox-link">Jackets & Coats</a>
+                                <a href="" class="checkbox-link">Polos</a>
+                                <a href="" class="checkbox-link">Shirts</a>
+                                <a href="" class="checkbox-link">Shoes</a>
+                                <a href="" class="checkbox-link">Sweaters & Knits</a>
+                                <a href="" class="checkbox-link">T-Shirts</a>
+                                <a href="" class="checkbox-link">Tanks</a>
+                            </details>
+                            <details>
+                                <summary class="checkbox-heading"> BRAND</summary>
+                                <a href="" class="checkbox-link">Accessories</a>
+                                <a href="" class="checkbox-link">Bags</a>
+                                <a href="" class="checkbox-link">Denim</a>
+                                <a href="" class="checkbox-link">Hoodies & Sweatshirts</a>
+                                <a href="" class="checkbox-link">Jackets & Coats</a>
+                                <a href="" class="checkbox-link">Polos</a>
+                                <a href="" class="checkbox-link">Shirts</a>
+                                <a href="" class="checkbox-link">Shoes</a>
+                                <a href="" class="checkbox-link">Sweaters & Knits</a>
+                                <a href="" class="checkbox-link">T-Shirts</a>
+                                <a href="" class="checkbox-link">Tanks</a>
+                            </details>
+                            <details>
+                                <summary class="checkbox-heading"> DESIGNER</summary>
+                                <a href="" class="checkbox-link">Accessories</a>
+                                <a href="" class="checkbox-link">Bags</a>
+                                <a href="" class="checkbox-link">Denim</a>
+                                <a href="" class="checkbox-link">Hoodies & Sweatshirts</a>
+                                <a href="" class="checkbox-link">Jackets & Coats</a>
+                                <a href="" class="checkbox-link">Polos</a>
+                                <a href="" class="checkbox-link">Shirts</a>
+                                <a href="" class="checkbox-link">Shoes</a>
+                                <a href="" class="checkbox-link">Sweaters & Knits</a>
+                                <a href="" class="checkbox-link">T-Shirts</a>
+                                <a href="" class="checkbox-link">Tanks</a>
+                            </details>
+                        </div>
                     </details>
-                    <div class="fil-item">
-                        <details class="fill-detals" >
-                            <summary class="fil-link">
-                                <p>TRENDING NOW</p>
-                            </summary>
-                            <div class="checkbox checkbox__trending">
-                                <label for=""><input type="checkbox" name="M">M</label>
-                                    <label for=""><input type="checkbox" placeholder="M" name="L">Lorem.</label>
-                                    <label for=""><input type="checkbox" name="XL">Lorem.</label>
-                                    <label for=""><input type="checkbox" name="S">Lorem.</label>
-                            </div>
-                        </details>
-                            
-                        <details class="fill-detals">
-                            <summary class="fil-link">
-                                <p>SIZE</p>
-                            </summary>
-                            <div class="checkbox checkbox__size">
-                                <label for=""><input type="checkbox" name="M">M</label>
-                                    <label for=""><input type="checkbox" placeholder="M" name="L">L</label>
-                                    <label for=""><input type="checkbox" name="XL">XL</label>
-                                    <label for=""><input type="checkbox" name="S">S</label>
-                            </div>
-                        </details>
-                        <details class="fill-detals">
-                            <summary class="fil-link">
-                                <p>PRICE</p>
-                            </summary>
-                            <div class="checkbox checkbox__price">
-                                    <label  for=""><input type="checkbox" name="M">123</label>
-                                    <label  for=""><input type="checkbox" name="L">345</label>
-                                    <label  for=""><input type="checkbox" name="XL">567</label>
-                                    <label  for=""><input type="checkbox" name="S">789</label>
-                            </div>
-                        </details>
-                    </div>
-                
+                </div>
+                <div class="fil-item">
+                    <details class="fill-detals">
+                        <summary class="fil-link">
+                            <p>TRENDING NOW</p>
+                        </summary>
+                        <div class="checkbox checkbox__trending">
+                            <label for=""><input type="checkbox" name="M">M</label>
+                            <label for=""><input type="checkbox" placeholder="M" name="L">Lorem.</label>
+                            <label for=""><input type="checkbox" name="XL">Lorem.</label>
+                            <label for=""><input type="checkbox" name="S">Lorem.</label>
+                        </div>
+                    </details>
+
+                    <details class="fill-detals">
+                        <summary class="fil-link">
+                            <p>SIZE</p>
+                        </summary>
+                        <div class="checkbox checkbox__size">
+                            <label for=""><input type="checkbox" name="M">M</label>
+                            <label for=""><input type="checkbox" placeholder="M" name="L">L</label>
+                            <label for=""><input type="checkbox" name="XL">XL</label>
+                            <label for=""><input type="checkbox" name="S">S</label>
+                        </div>
+                    </details>
+                    <details class="fill-detals">
+                        <summary class="fil-link">
+                            <p>PRICE</p>
+                        </summary>
+                        <div class="checkbox checkbox__price">
+                            <label for=""><input type="checkbox" name="M">123</label>
+                            <label for=""><input type="checkbox" name="L">345</label>
+                            <label for=""><input type="checkbox" name="XL">567</label>
+                            <label for=""><input type="checkbox" name="S">789</label>
+                        </div>
+                    </details>
+                </div>
+
             </nav>
-            
+
             <div class="item-flex">
                 <div class="item">
                     <a href="#" class="item-link">
@@ -221,4 +277,5 @@
 
     </section>
 </body>
+
 </html>

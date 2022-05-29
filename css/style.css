@@ -885,7 +885,57 @@ summary::-webkit-details-marker {
 
 .detail[open]::after {
   content: url(/image/filmenu.svg);
-  color: red;
+}
+
+.sum-fil {
+  position: relative;
+  padding-left: 15px;
+  z-index: 200;
+}
+
+.filter-det[open] > .sum-fil {
+  color: #EF5B70;
+  background-color: #fff;
+}
+
+.filter-det[open] > .sum-fil::after {
+  content: url(/image/filmenu-red.svg);
+}
+
+.checkbox__filter {
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 17px;
+  padding-top: 20px;
+  box-shadow: 6px 4px 35px #222;
+  top: 0;
+}
+
+.checkbox-heading {
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  margin: 18px 18px 18px 0;
+}
+
+.checkbox-link {
+  padding: 0 11px 11px 0px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #6F6E6E;
 }
 
 .fil-item {
