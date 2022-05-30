@@ -235,6 +235,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .item{
@@ -627,6 +628,7 @@ color: #6F6E6E;
 .fil-item{
     display: flex;
     margin: auto;
+    justify-content: space-around
 }
 .fil-link {
     padding-left: 28px;
@@ -691,11 +693,11 @@ color: #6F6E6E;
     margin-right: 9px;
 }
 
-.slide {
+.slide-list {
     width: 280px;
     height: 44px;
     border: 1px solid #EBEBEB;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .slide-pages {
     display: flex;
@@ -715,4 +717,42 @@ color: #6F6E6E;
 .slide-pages__link {
     padding-left: 13px;
     color: #000000;
+}
+
+.row{
+--bs-gutter-x: 0; 
+--bs-gutter-y: 0;
+}
+
+.carousel-caption { 
+    padding: 0;
+    position: initial;
+    d-none{} 
+    d-md-block{} 
+}
+
+.collection {
+    background-color: #fff;
+    
+}
+
+.title-slide {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+padding: 25px 0 25px 0;
+color: #F16D7F;
+}
+
+.price-slide {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+padding: 25px 0 25px 0;
+color: #EF5B70;
+
 }
