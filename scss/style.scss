@@ -16,7 +16,9 @@ h1, h2 {
     color: #222;
     margin: 0;
 }
-
+label {
+    color: #000000;
+}
 a {
     text-decoration: none;
     display: block;
@@ -737,6 +739,9 @@ color: #6F6E6E;
 }
 
 .title-slide {
+    display: contents;
+    box-sizing: border-box;
+    
     font-family: 'Lato';
 font-style: normal;
 font-weight: 300;
@@ -755,4 +760,9 @@ line-height: 29px;
 padding: 25px 0 25px 0;
 color: #EF5B70;
 
+}
+
+.container-slide {
+    background: #fff;
+    margin-top: -20px;
 }
