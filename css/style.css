@@ -1089,10 +1089,16 @@ summary::-webkit-details-marker {
   display: flex;
 }
 
+.regist-text {
+  text-align: start;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   text-align: start;
+  margin-right: 150px;
+  margin-bottom: 90px;
 }
 
 .registration-container {
@@ -1107,6 +1113,13 @@ summary::-webkit-details-marker {
 
 .registration-container h3 {
   padding-bottom: 15px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
 }
 
 .registration-container input {
@@ -1139,4 +1152,40 @@ label {
 
 input:checked {
   border: 6px solid black;
+}
+
+.registr-text__min {
+  padding: 8px 0 8px 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registr-text__min::before {
+  content: url(/image/galo4ka.svg);
+  padding-right: 20px;
+}
+
+form .botton {
+  display: flex;
+  width: 115px;
+  margin: 20px 0 0 0;
+  background: #F26376;
+}
+
+form .botton input {
+  display: flex;
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
 }
