@@ -767,3 +767,43 @@ color: #EF5B70;
     background: #fff;
     margin-top: -20px;
 }
+
+
+//REGISTRATION
+
+.registration-container{
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.registration-container {
+    input {
+        width: 360px;
+    height: 45px;
+        
+    }
+}
+
+.radio {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    width: 360px;
+    align-items: center;
+    input {
+        width: 17px;
+    }
+  }
+  
+  label {
+    margin-right: 15px;
+    line-height: 32px;
+  }
+  
+  input:checked {
+    border: 6px solid black;
+  }
