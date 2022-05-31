@@ -1095,6 +1095,20 @@ summary::-webkit-details-marker {
   text-align: start;
 }
 
+.registration-container {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-top: 64px;
+}
+
+.registration-container h3 {
+  padding-bottom: 15px;
+}
+
 .registration-container input {
   width: 360px;
   height: 45px;
@@ -1115,6 +1129,12 @@ summary::-webkit-details-marker {
 label {
   margin-right: 15px;
   line-height: 32px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
 }
 
 input:checked {
