@@ -367,6 +367,10 @@ a {
   display: block;
 }
 
+img {
+  width: 100%;
+}
+
 header {
   width: 100%;
   background-color: #222;
@@ -376,6 +380,7 @@ header {
   max-width: 1140px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .header {
@@ -383,10 +388,6 @@ header {
   justify-content: space-between;
   height: 75px;
   align-items: center;
-}
-
-.container {
-  position: relative;
 }
 
 .menu__left {
@@ -523,6 +524,7 @@ p {
 .container .top__card {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .bottom__card {
@@ -715,6 +717,7 @@ p {
 
 .info__image {
   padding-bottom: 28px;
+  width: auto;
 }
 
 .subscribe {
@@ -1222,4 +1225,46 @@ form .botton input {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+@media (max-width: 769px) and (min-width: 400px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+  .brand {
+    height: 368px;
+  }
+  .brand .block__left {
+    background-position: 51% 0;
+    flex: 0 1 40%;
+    background-size: cover;
+  }
+  .brand .back__text {
+    flex: 0 1 60%;
+  }
+  .info {
+    height: 100%;
+  }
+  .info .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 360px;
+    padding: 15px 0;
+  }
+  .subscribe {
+    display: flex;
+    padding-bottom: 30px;
+    height: 100%;
+  }
+  .subscribe .container {
+    flex-direction: column;
+  }
+  .comments {
+    padding-bottom: 50px;
+  }
+  .subscribe__text_min {
+    padding-bottom: 30px;
+  }
 }
